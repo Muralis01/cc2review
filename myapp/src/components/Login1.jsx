@@ -20,13 +20,13 @@ function Login() {
       // If userCredential exists, proceed with the login
       if (userCredential.user) {
         console.log("User logged in successfully:", userCredential.user);
-        window.location.href = "/i";
-        toast.success("User logged in successfully", {
+        window.location.href = "/";
+        toast.success("User logged in  successfully", {
           position: "top-center",
         });
       }
     } catch (error) {
-      console.log("Login Error:", error.message);
+      console.log("LOGIN ERROR: ", error.message);
       toast.error("Invalid email or password", {
         position: "bottom-center",
       });
